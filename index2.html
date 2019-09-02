@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Hive Dashboard 2</title>
+	<link rel="stylesheet" href="css/style.css">
+  <script src="scripts/svgxuse.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+	<header class="header">
+		<div class="logo">
+      <div><img src="img/logo.png" alt="Helios"></div>
+      <h1>Hive Dashboard</h1>
+    </div>
+		<button>
+      <svg width="20" height="21"><use href="img/management.svg#management"/></svg>
+			<span>Management</span>
+		</button>
+	</header>
+	<main class="main">
+		<nav class="nav">
+			<div class="icon-close">
+		        <span></span><span></span>
+		      </div>
+      <form class="form-search">
+        <label for="search">Search</label>
+        <input type="text" id="search" class="search">
+        <input type="submit" value class="submit">
+      </form>
+      <span class="location">Location</span>
+			<ul class="menu">
+				<li class="sub-menu"><a href="#USA">USA</a>
+          <ul>
+            <li class="sub-menu"><a href="#EastCoast">East Coast</a>
+              <ul>
+                <li class="sub-menu"><a href="#Florida">Florida</a>
+                    <ul>
+                      <li>
+                        <a href="#Florida" class="active">Miami</a>
+                      </li>
+                      <li>
+                        <a href="#Florida">Orlando</a>
+                      </li>
+                      <li>
+                        <a href="#Florida">Jacksonville</a>
+                      </li>
+                      <li>
+                        <a href="#Florida">Tampa</a>
+                      </li>
+                    </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+        </li>
+
+			</ul>
+		</nav>
+    <div class="icon-menu">
+     <span></span><span></span><span></span>
+    </div>
+
+		<div class="page">
+      <div class="button">
+        <a href="#" >Manage All Hives</a>
+      </div>
+      <div class="page-container">
+        <h2 class="hivi-title">Hives</h2> 
+        <form class="hives-form"> 
+          <div class="border-block hives-form__left">
+            <ul>
+              <li><input type="checkbox" id="all"><label for="all">Select All Hives</label></li>
+              <li><input type="checkbox" id="check1"><label for="check1"> US-TX-PLN-Dallas<span></span></label></li>
+              <li><input type="checkbox" id="check2"><label for="check2">US-TX-PLN-CustomerLoyalt<span></span></label></li>
+              <li><input type="checkbox" id="check3"><label for="check3">US-CA-SJR-Heritage-Room<span></span></label></li>
+              <li><input type="checkbox" id="check4"><label for="check4">US-CA-SJR-Chennai<span></span></label></li>
+              <li><input type="checkbox" id="check5"><label for="check5">US-TX-PLN-Dallas<span></span></label></li>
+              <li><input type="checkbox" id="check6"><label for="check6">US-TX-PLN-CustomerLoyalt<span></span></label></li>
+              <li><input type="checkbox" id="check7"><label for="check7">US-CA-SJR-Heritage-Room<span></span></label></li>
+              <li><input type="checkbox" id="check8"><label for="check8">US-CA-SJR-Chennai<span></span></label></li>
+              <li><input type="checkbox" id="check9"><label for="check9">US-TX-PLN-Dallas<span></span></label></li>
+              <li><input type="checkbox" id="check10"><label for="check10">US-TX-PLN-CustomerLoyalt<span></span></label></li>
+              <li><input type="checkbox" id="check11"><label for="check11">US-CA-SJR-Heritage-Room<span></span></label></li>
+              <li><input type="checkbox" id="check12"><label for="check12">US-CA-SJR-Chennai<span></span></label></li>
+              <li><input type="checkbox" id="check13"><label for="check13">US-TX-PLN-Dallas<span></span></label></li>
+              <li><input type="checkbox" id="check14"><label for="check14">US-TX-PLN-CustomerLoyalt<span></span></label></li>
+              <li><input type="checkbox" id="check15"><label for="check15">US-CA-SJR-Heritage-Room<span></span></label></li>
+              <li><input type="checkbox" id="check16"><label for="check16">US-CA-SJR-Chennai<span></span></label></li>
+              <li><input type="checkbox" id="check17"><label for="check17">US-TX-PLN-Dallas<span></span></label></li>
+              <li><input type="checkbox" id="check18"><label for="check18">US-TX-PLN-CustomerLoyalt<span></span></label></li>
+              <li><input type="checkbox" id="check19"><label for="check19">US-CA-SJR-Heritage-Room<span></span></label></li>
+              <li><input type="checkbox" id="check20"><label for="check20">US-CA-SJR-Chennai<span></span></label></li>
+              <li><input type="checkbox" id="check21"><label for="check21">US-TX-PLN-Dallas<span></span></label></li>
+              <li><input type="checkbox" id="check22"><label for="check22">US-TX-PLN-CustomerLoyalt<span></span></label></li>
+              <li><input type="checkbox" id="check23"><label for="check23">US-CA-SJR-Heritage-Room<span></span></label></li>
+              <li><input type="checkbox" id="check24"><label for="check24">US-CA-SJR-Chennai<span></span></label></li>
+              <li><input type="checkbox" id="check25"><label for="check25">US-TX-PLN-Dallas<span></span></label></li>
+              <li><input type="checkbox" id="check26"><label for="check26">US-TX-PLN-CustomerLoyalt<span></span></label></li>
+              <li><input type="checkbox" id="check27"><label for="check27">US-CA-SJR-Heritage-Room<span></span></label></li>
+              <li><input type="checkbox" id="check28"><label for="check28">US-CA-SJR-Chennai<span></span></label></li>
+            </ul> 
+          </div>
+
+          <div class="hives-form__right">
+            <div class="border-block flex-part">
+              <div class="line-bt">
+                <h3>Template Settings</h3>
+                <div class="question"><img src="img/icon-question.png" alt="Template Settings" width="23" height="23"></div>
+              </div>
+              <div class="btn-block">
+                <button class="btn btn-cl1">Load template</button>
+              </div>
+            </div>
+
+            <div class="border-block flex-part">
+              <div class="line-bt">
+                <h3>Hive Actions</h3>
+                <div class="question"><img src="img/icon-question.png" alt="Template Settings" width="23" height="23"></div>
+              </div>
+              <div class="btn-block">
+                <button class="btn btn-cl2">Reboot Hive(s)</button>
+                <button class="btn btn-cl3">Update Hive(s)</button>
+              </div>
+            </div>
+
+            <div class="border-block flex-all">
+              <div class="line-bt">
+                <h3>Preview</h3>
+              </div>
+              <div class="flex-button">
+                <div class="play">
+                  <div class="online">
+                    <span>Online</span>
+                  </div>
+                  <div class="data">
+                    Friday, August 23<br>
+                    3:23pm
+                  </div>
+                </div>
+                <div class="btn-shadow btn-shadow-hover">
+                  <div>
+                   <svg width="49" height="45" fill="#46b9ca"><use href="img/Download.svg#download" /></svg>
+                  </div>
+                  <h3>Download
+                    <a href="#">goubiq.com/downloads</a>
+                  </h3>
+                </div>
+                <div class="btn-shadow btn-shadow-hover">
+                      <div>
+                        <svg width="41" height="55" fill="#46b9ca"><use href="img/Launch.svg#launch" /></svg>
+                      </div>
+                      <h3>Launch the application from the system tray</h3>
+                </div>
+                <div class="btn-shadow btn-shadow-hover">
+                  <div>
+                    <svg width="55" height="39" fill="#46b9ca"><use href="img/Connect.svg#connect" /></svg>
+                  </div>
+                  <h3>Connect to the meeting room</h3>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="border-block flex-all">
+              <div class="line-bt">
+                <h3>Layout</h3>
+                <div class="question"><img src="img/icon-question.png" alt="Template Settings" width="23" height="23"></div>
+              </div>
+
+              <div class="flex-grop-layout">
+              <div class="flex-button flex-button-layout">
+
+                <div class="transparent-block">
+                  <div class="label-chekbox">
+                    <input type="checkbox" id="transparent"><label for="transparent">Transparent Top Panel</label>
+                  </div>
+                  <div class="time-zone">
+                    <span>Time Zome</span>
+                    <select>
+                      <option value="GMT - 04:00">GMT - 04:00</option>
+                      <option value="GMT - 04:00">GMT - 04:00</option>
+                      <option value="GMT - 04:00">GMT - 04:00</option>
+                    </select>
+                  </div>
+                </div>
+
+                <button class="btn-shadow btn-shadow-hover">
+                  <div>
+                    <svg width="61" height="49" fill="#46b9ca"><use href="img/background.svg#background" /></svg>
+                  </div>
+                  <h3>Backgrounds</h3>
+                  <span><img src="img/icon-plus.png" alt="Backgrounds" width="23" height="23"></span>
+                </button>
+
+                <button class="btn-shadow btn-shadow-hover">
+                  <div>
+                    <svg width="49" height="49" fill="#46b9ca"><use href="img/icon-logo.svg#icon-logo" /></svg>
+                  </div>
+                  <h3>Logo</h3>
+                  <span><img src="img/icon-plus.png" alt="Logo" width="23" height="23"></span>
+                </button>
+
+                <button class="btn-shadow btn-shadow-hover">
+                  <div>
+                    <svg width="47" height="52" fill="#46b9ca"><use href="img/color.svg#color" /></svg>
+                  </div>
+                  <h3>Color Scheme</h3>
+                  <span><img src="img/icon-plus.png" alt="Color Scheme" width="23" height="23"></span>
+                </button>
+
+                <button class="btn-shadow btn-shadow-hover">
+                  <div>
+                    <svg width="38" height="45" fill="#46b9ca"><use href="img/Notifications.svg#Notifications" /></svg>
+                  </div>
+                  <h3>Notifications</h3>
+                  <span><img src="img/icon-plus.png" alt="Notifications" width="23" height="23"></span>
+                </button> 
+              </div>
+
+              <div class="flex-button flex-button-layout">
+                <div class="switch">
+                  <div class="switch-button">
+                    <input type="checkbox" id="s" />
+                    <label class="slider-v1" for="s"></label>
+                    <span>Campaigns</span>
+                  </div>
+                  <button class="btn-shadow">
+                    <div>
+                      <svg width="50" height="45" fill="#46b9ca"><use href="img/Campaign.svg#Campaign" /></svg>
+                    </div>
+                    <h3>Campaign</h3>
+                    <span><img src="img/icon-plus.png" alt="Campaign" width="23" height="23"></span>
+                  </button>
+                </div>
+              </div>
+
+              </div>
+            </div>
+
+            <div class="border-block flex-part">
+              <div class="line-bt">
+                <h3>Network Configuration</h3>
+              </div>
+              <div class="select-part">
+                 <select class="select-part__wifi">
+                  <option value="Primari Wi-Fi">Primari Wi-Fi</option>
+                  <option value="Primari Wi-Fi">Primari Wi-Fi</option>
+                </select>
+              </div>
+            </div>
+            <div class="border-block flex-part">
+              <div class="line-bt">
+                <h3>Active Directory Setup</h3>
+              </div>
+              <div class="activedirectory">
+                <div class="label-chekbox">
+                  <input type="checkbox" id="restrict"><label for="restrict">Restrict Access to Internal Employees</label>
+                </div>
+                 <input type="text">
+              </div>
+            </div>
+
+            <div class="border-block flex-part">
+              <div class="line-bt">
+                <h3>System Settings</h3>
+              </div>
+              <div class="system">
+                <div>
+                 <input type="checkbox" id="enable">
+                 <label for="enable">Enable PIN Code</label>
+                </div>
+                <div>
+                 <input type="checkbox" id="allow">
+                 <label for="allow">Allow</label>
+                </div>
+                <div>
+                 <input type="checkbox" id="remote">
+                 <label for="remote">Remote Connectivity</label>
+                </div>
+              </div>
+            </div>
+            <div class="border-block flex-part browser-block">
+              <div class="line-bt">
+                <h3>Browser Solution URL</h3>
+                <h3>Filter Tags</h3>
+              </div>
+              <div class="browser">
+                <div>
+                 <input type="text" placeholder="https://present.goubiq.com">
+                 </div>
+                <div>
+                  <input type="text" placeholder="Tags to filter separated by ‘;’ or ‘,’">
+                </div>
+              </div>
+            </div>
+          
+          <div class="btn-block link-bottom">
+            <a href="#" class="btn btn-cl1">Advanced Network Settings</a>
+            <a href="#" class="btn btn-cl1">Show IP on Display</a>
+            <div class="button">
+              <a href="#">Apply Changes</a>
+            </div>
+          </div>
+          </div>
+
+        </form>
+      </div>
+		</div>
+	</main>
+</div>
+<script src="scripts/jquery-3.3.1.min.js"></script>	
+<script src="scripts/script.js"></script>
+</body>
+</html>

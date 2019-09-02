@@ -1,0 +1,122 @@
+.listen-block{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+   -webkit-box-pack: center;
+ -ms-flex-pack: center;
+     justify-content: center;
+
+	&__item{
+		min-width: 27.8rem;
+		width: 100%;
+		min-height: 17.9rem;
+		border: 0.1rem solid #e7eaec;
+		background: #fafafa;
+		border-top-style: solid;
+		border-top-width: 0.6rem;
+		margin: 1.3rem;
+		cursor: pointer;
+		.top{
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			padding: 1rem 1.2rem;
+			-webkit-box-pack: justify;
+			    -ms-flex-pack: justify;
+			        justify-content: space-between;
+			border-bottom: 0.1rem solid #d4d4d4;
+			span{
+				color: #767676;
+				font-size: 1.6rem;
+			}
+		}
+		.icon{
+			width: 49px;
+			margin: auto;
+			padding-top: 2rem;
+			padding-bottom: 1.2rem;
+		}
+		h2{
+			font-size: 1.8rem;
+			text-align: center;
+		}
+	}
+}
+@media screen and (max-width: 768px){
+.listen-block{
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+}
+
+@media screen and (min-width: 1921px){
+.listen-block{
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.listen-block__item{
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 5%;
+	        flex: 0 0 5%;
+}
+}
+
+
+@media screen and (max-width: 1920px){
+.listen-block__item{
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 18%;
+	        flex: 0 0 18%;
+}
+}
+
+
+@media screen and (max-width: 1900px){
+.listen-block__item{
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 23%;
+	        flex: 0 0 23%;
+}
+}
+@media screen and (max-width: 1700px){
+.listen-block__item{
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 31%;
+	        flex: 0 0 31%;
+}
+}
+@media screen and (max-width: 1500px){
+.listen-block__item{
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 30%;
+	        flex: 0 0 30%;
+}
+}
+
+@media screen and (max-width: 1300px){
+.listen-block__item{
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 45%;
+	        flex: 0 0 45%;
+}
+}
+@media screen and (max-width: 1180px){
+.listen-block__item{
+	min-width: 20rem;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 45%;
+	        flex: 0 0 45%;
+}
+}
+
+@media screen and (max-width: 992px){
+.listen-block__item{
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 100%;
+	        flex: 0 0 100%;
+}
+}
